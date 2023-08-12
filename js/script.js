@@ -1,13 +1,15 @@
+// Pokemons Data
 const pokemonName = document.querySelector('.pokemon-name');
 const pokemonNumber = document.querySelector('.pokemon-number');
 const pokemonImage = document.querySelector('.img-pokemon');
 
+// Inserção de dados para pesquisa
 const form = document.querySelector('.form');
 const input = document.querySelector('.input-search');
 const buttonNext = document.querySelector('.btn-next');
 const buttonPrev = document.querySelector('.btn-prev');
 
-let searchPokemon = 1;
+let searchPokemon = 1; // variável de auxílio em passagem de ID's dos pokemons na API
 
 const fetchPokemon = async(pokemon) => {
 
